@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بحبك  - زوزو</title>
+    <style>
+        body {
+            background-color: #001f3f; /* كحلي ملكي مطفي */
+            color: #FFD700; /* ذهبي ساطع */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .container { padding: 50px 20px; }
+        .level {
+            margin-bottom: 100px;
+            opacity: 0.8;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .level:hover { opacity: 1; transform: scale(1.1); }
+        .icon {
+            font-size: 80px;
+            text-shadow: 0 0 20px #FFD700;
+            margin-bottom: 10px;
+        }
+        .date { font-weight: bold; font-size: 1.2em; }
+        .message {
+            display: none;
+            background: rgba(255, 215, 0, 0.1);
+            border: 1px solid #FFD700;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- لفل 1 -->
+    <div class="level" onclick="showMsg('m1')">
+        <div class="icon">★</div>
+        <div class="date">6/3/2002</div>
+        <div id="m1" class="message">
+            6/3/2002   مش مجرد تاريخ، ده اليوم اللي اتولد في الراجل اللي بشوف فيه السند والأمان 
+        </div>
+    </div>
+
+    <!-- لفل 2 -->
+    <div class="level" onclick="showMsg('m2')">
+        <div class="icon">❤</div>
+        <div class="date">9/9/2020</div>
+        <div id="m2" class="message">
+            من 9/9/2020 والقلب ده ملوش اتجاه غيرك.. أنت الاختيار اللي كل يوم بكتشف إني صح فيه.
+        </div>
+    </div>
+
+    <!-- لفل 3 -->
+    <div class="level" onclick="showMsg('m3')">
+        <div class="icon">💍</div>
+        <div class="date">1/10/2025</div>
+        <div id="m3" class="message">
+            الخاتم اللي لبسته يوم 1/10 مكنش مجرد خطوبة، ده كان تنفيذ لوعودك ليا اننا هنفضل طول العمر سوي وإنك هتحارب عشاني.
+        </div>
+    </div>
+
+    <!-- لفل 4 -->
+    <div class="level" onclick="showMsg('m4')">
+        <div class="icon">🏠</div>
+        <div class="date">المستقبل</div>
+        <div id="m4" class="message">
+            السنة دي بنحتفل وإحنا بنعد الأيام، والسنة الجاية بإذن الله هنحتفل في بيتنا.. بحبك يا أغلى بطل.
+        </div>
+    </div>
+</div>
+
+<script>
+    function showMsg(id) {
+        var msg = document.getElementById(id);
+        msg.style.display = (msg.style.display === 'block') ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>
